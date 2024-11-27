@@ -44,7 +44,7 @@ if nav == "Prediction":
     st.header("Know your Salary")
     val = st.number_input("Enter you exp",0.00,20.00,step = 0.25)
     val = np.array(val).reshape(1,-1)
-    model_load = pickle.load(open('model.xyz', 'rb'))
+    model_load = pickle.load(open('model.abc', 'rb'))
     pred =model_load.predict(val)[0]
 
     if st.button("Predict"):
